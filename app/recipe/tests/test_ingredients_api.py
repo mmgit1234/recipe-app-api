@@ -21,7 +21,7 @@ def create_user(email='user@example.com', password='testpass123'):
     """Create and return user."""
     return get_user_model().objects.create_user(email=email, password=password)
 
-class PublicIngredentsApiTests(TestCase):
+class PublicIngredientsApiTests(TestCase):
     """Test unathenticated API requests."""
 
     def setUp(self):
